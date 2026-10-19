@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Google Search Console Crawler Sitemap
+Sitemap: https://chitrakar-studio.vercel.app/sitemap.xml

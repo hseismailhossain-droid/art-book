@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Outer glowing artistic stroke -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#strokeGrad)" stroke-width="4" stroke-opacity="0.3" stroke-dasharray="12 12"/>
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#6366f1" stroke-width="2" stroke-opacity="0.2"/>
+
+  <!-- Palette base shape -->
+  <path d="M256,90 C340,90 420,150 420,245 C420,320 375,370 330,370 C310,370 300,355 285,355 C270,355 260,375 240,375 C170,375 100,310 100,230 C100,150 170,90 256,90 Z" 
+        fill="#1e1e2e" stroke="url(#strokeGrad)" stroke-width="12" filter="url(#glow)"/>
+
+  <!-- Color Wells on Palette -->
+  <circle cx="170" cy="175" r="24" fill="#ef4444" />
+  <circle cx="230" cy="140" r="24" fill="#f59e0b" />
+  <circle cx="295" cy="145" r="24" fill="#10b981" />
+  <circle cx="345" cy="185" r="24" fill="#06b6d4" />
+  <circle cx="365" cy="250" r="24" fill="#a855f7" />
+
+  <!-- Thumbhole -->
+  <circle cx="200" cy="305" r="26" fill="#0f172a" stroke="#475569" stroke-width="5"/>
+
+  <!-- Dynamic Artist Stylus / Brush crossing through -->
+  <g transform="translate(140, 100) rotate(35, 140, 140)">
+    <!-- Stylus Handle -->
+    <rect x="130" y="30" width="22" height="230" rx="11" fill="url(#strokeGrad)" filter="url(#glow)"/>
+    <!-- Metal Ferrule -->
+    <rect x="127" y="250" width="28" height="30" rx="4" fill="#e2e8f0"/>
+    <!-- Brush Tip / Ink nib -->
+    <path d="M127,280 C127,280 141,335 141,345 C141,335 155,280 155,280 Z" fill="#ec4899"/>
+    <!-- Nib highlight -->
+    <circle cx="141" cy="335" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- 8K and Rigging sparkles -->
+  <path d="M390,110 L395,125 L410,130 L395,135 L390,150 L385,135 L370,130 L385,125 Z" fill="#38bdf8"/>
+  <path d="M110,380 L114,392 L126,396 L114,400 L110,412 L106,400 L94,396 L106,392 Z" fill="#ec4899"/>
+  <path d="M410,340 L413,350 L423,353 L413,356 L410,366 L407,356 L397,353 L407,350 Z" fill="#10b981"/>
+
+  <!-- 8K Ultra Badge text -->
+  <rect x="186" y="415" width="140" height="34" rx="17" fill="#090d16" stroke="url(#accentGrad)" stroke-width="3"/>
+  <text x="256" y="438" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900" text-anchor="middle" letter-spacing="2">8K STUDIO</text>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Chitrakar Studio - ড্রয়িং ও রিগিং অ্যানিমেশন",
+  "description": "মোবাইলের জন্য প্রফেশনাল ড্রয়িং, ২ডি রিগিং ক্যারেক্টার সিস্টেম, ফ্রেম ও লেয়ার অ্যানিমেশন এবং ৮কে হাই রেজোলিউশন এক্সপোর্ট স্টুডিও।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

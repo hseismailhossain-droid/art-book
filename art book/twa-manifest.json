@@ -1,0 +1,37 @@
+{
+  "packageId": "app.vercel.chitrakar.twa",
+  "host": "chitrakar-studio.vercel.app",
+  "name": "চিত্রকার স্টুডিও",
+  "launcherName": "চিত্রকার",
+  "themeColor": "#090D16",
+  "navigationColor": "#090D16",
+  "backgroundColor": "#090D16",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://chitrakar-studio.vercel.app/pwa-512x512.png",
+  "maskableIconUrl": "https://chitrakar-studio.vercel.app/pwa-maskable-512x512.png",
+  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "shortcuts": [
+    {
+      "name": "নতুন ড্রয়িং",
+      "shortName": "ড্রয়িং",
+      "url": "https://chitrakar-studio.vercel.app/",
+      "chosenIconUrl": "https://chitrakar-studio.vercel.app/pwa-192x192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://chitrakar-studio.vercel.app/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false
+}
